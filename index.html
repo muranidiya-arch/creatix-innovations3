@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatix Innovation - Powering Digital Excellence</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Three.js & Post Processing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <canvas id="webgl"></canvas>
+
+    <header class="header">
+        <div class="logo">CREATIX <span class="highlight">INNOVATION</span></div>
+        <nav class="nav">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="#history" class="nav-link">History</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Scrollable container -->
+    <div class="scroll-container">
+
+        <!-- 1. Hero -->
+        <section class="section section-hero" id="hero">
+            <div class="content-wrap">
+                <h1 class="hero-title">
+                    <span class="line">POWERING</span>
+                    <span class="line gradient-text">DIGITAL</span>
+                    <span class="line">EXCELLENCE</span>
+                </h1>
+                <div class="scroll-indicator">
+                    <span>Enter the System</span>
+                    <div class="line-indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Intro -->
+        <section class="section section-intro" id="intro">
+            <div class="content-wrap box-style">
+                <p class="intro-text">
+                    Full-stack IT & Digital Agency based in <span class="highlight">Jaipur, India</span>.
+                </p>
+                <p class="intro-subtext">
+                    Trusted by 50+ businesses globally to drive sustainable growth. We are your one-stop shop for
+                    digital transformation.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. Services -->
+        <section class="section section-services" id="services">
+            <div class="content-wrap">
+                <h2>Our Ecosystem</h2>
+                <div class="services-grid">
+                    <div class="service-item">Digital Marketing</div>
+                    <div class="service-item">Web & App Dev</div>
+                    <div class="service-item">UI/UX Design</div>
+                    <div class="service-item">Enterprise Systems</div>
+                    <div class="service-item">Data Analytics</div>
+                    <div class="service-item">Cloud Operations</div>
+                    <div class="service-item">Cybersecurity</div>
+                    <div class="service-item">AI & Automation</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Process -->
+        <section class="section section-process" id="process">
+            <div class="content-wrap">
+                <h2>The Workflow</h2>
+                <div class="process-steps">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <h3>Discovery</h3>
+                        <p>Strategy & Scope</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <h3>Design</h3>
+                        <p>UI/UX & Prototype</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <h3>Develop</h3>
+                        <p>Code & Quality</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">04</span>
+                        <h3>Launch</h3>
+                        <p>Deploy & Live</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. History -->
+        <section class="section section-history" id="history">
+            <div class="content-wrap box-style">
+                <h2>Our Evolution</h2>
+                <ul class="timeline">
+                    <li><span class="year">2015</span> Founded in Jaipur</li>
+                    <li><span class="year">2019</span> Enterprise Solutions Pivot</li>
+                    <li><span class="year">2021</span> Global Expansion</li>
+                    <li><span class="year">2023</span> AI & RPA Integration</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 6. Contact -->
+        <section class="section section-contact" id="contact">
+            <div class="content-wrap">
+                <h2 class="closing-title">Ready to Transform?</h2>
+                <div class="contact-details">
+                    <p>Jaipur, India</p>
+                    <p>+91 80001 84324</p>
+                    <a href="mailto:creatixinnovation@gmail.com" class="email-link">creatixinnovation@gmail.com</a>
+                </div>
+                <a href="mailto:creatixinnovation@gmail.com" class="btn-primary">Start Project</a>
+            </div>
+        </section>
+
+        <section class="section footer-trigger"></section>
+
+    </div>
+
+    <footer class="fixed-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Creatix Innovation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
